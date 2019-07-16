@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewBackground"
+
+    android:orientation="vertical">
+<ProgressBar
+    android:layout_gravity="center"
+    android:id="@+id/pro"
+    android:visibility="gone"
+   style="@style/Widget.AppCompat.ProgressBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginHorizontal="@dimen/dp_50"
+        android:textColor="@color/Brown"
+        android:textSize="@dimen/sp_24"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

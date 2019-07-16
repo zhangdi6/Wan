@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.example.waz"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //appcompat
+    implementation deps.appcompat.appcompat
+    //okhttp3
+    implementation deps.okhttp3X.okhttp3
+    //ok拦截器
+    implementation deps.okhttp3X.logging_interceptor
+    //retrofit
+    implementation deps.retrofitX.retrofit2
+    implementation deps.retrofitX.retrofit_converter_gson
+    implementation deps.retrofitX.retrofit2_adapter_rxjava
+    implementation deps.retrofitX.retrofit2_rxjava_components
+    implementation deps.rxJavaX.rxjava
+    implementation deps.rxJavaX.rxAndroid
+    //butterknife
+    implementation deps.butterknife.butterknife
+    //glide
+    implementation deps.glide.glide
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor deps.glide.glidel
+    //banner
+    implementation deps.banner.banner
+    //design
+    implementation deps.design.design
+    //cardview
+    implementation deps.cardview.cardview
+    //greendao
+    implementation deps.greendao.greendao
+    implementation deps.greendao.greendao_generator
+    //gson
+    implementation deps.gson.gson
+    //support
+    implementation deps.support.support
+    //smartRefresh
+    implementation deps.SmartRefreshLayout.SmartRefreshLayout
+    implementation deps.SmartRefreshLayout.SmartRefreshHeader
+    //recyclerview
+    implementation deps.recyclerview.recyclerview
+    //constrainlayout
+    implementation deps.constraint_layout.constraintlayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'//垂直TabLayout
+
+
+}

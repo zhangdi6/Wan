@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/main_bv_first"
+    android:title="@string/bv_first"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:checkable="true"/>
+    <item android:id="@+id/main_bv_know"
+        android:title="@string/bv_know"
+        android:icon="@drawable/ic_know_24dp"
+        android:checkable="true"/>
+    <item android:id="@+id/main_bv_wechat"
+        android:title="@string/bv_wechat"
+        android:icon="@drawable/ic_wechat_black_24dp"
+        android:checkable="true"/>
+    <item android:id="@+id/main_bv_navi"
+        android:title="@string/bv_navi"
+        android:icon="@drawable/ic_navigation_black_24dp"
+        android:checkable="true"/>
+    <item android:id="@+id/main_bv_project"
+        android:title="@string/bv_project"
+        android:icon="@drawable/ic_project_black_24dp"
+        android:checkable="true"/>
+</menu>

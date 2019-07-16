@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.waz">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Api.App.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".UI.Activity.SearchArticleActivity"></activity>
+        <activity android:name=".UI.Activity.AboutActivity" />
+        <activity android:name=".UI.Activity.SettingActivity" />
+        <activity android:name=".UI.Activity.TodoActivity" />
+        <activity android:name=".UI.Activity.LoveActivity" />
+        <activity android:name=".UI.Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Activity.LoginActivity" />
+        <activity android:name=".UI.Activity.MainActivity" />
+        <activity android:name=".UI.Activity.KnowledgeActivity" />
+        <activity android:name=".UI.Activity.WebActivity" />
+        <activity android:name=".UI.Activity.RegisterActivity" />
+        <activity android:name=".UI.Activity.SearchActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.waz.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
